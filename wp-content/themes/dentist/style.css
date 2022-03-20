@@ -1,0 +1,26 @@
+/*
+    Theme Name: Dentist WP theme
+    Description: Dentist is a responsive WordPress Theme special crafted for dentist, dentist office.
+    Author: WPHunters
+    Author URI: https://wphunters.com
+    Version: 1.6.9
+    License: GNU General Public License version 1.0
+    License URI: https://www.gnu.org/licenses/gpl-1.0.html
+    Theme URI: http://themeforest.net/item/dentist-a-responsive-one-page-wordpress-theme/12242997
+    Text Domain: dentist
+    Domain Path: /languages
+*/
+
+/* THEME CHECK FALLBACK. */
+/* CLASSES ARE IMPLEMENTED IN style.less */
+
+.aligncenter { }
+.alignleft { }
+.alignright { }
+.bypostauthor {}
+.gallery-caption {}
+.sticky {}
+.wp-caption-text {}
+.wp-caption {}
+
+/* HERE YOU CAN ADD YOUR OWN STYLES */

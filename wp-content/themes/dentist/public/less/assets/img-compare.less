@@ -1,0 +1,86 @@
+.cd-image-container {
+  position  : relative;
+  overflow  : hidden;
+  .user-select(none);
+
+  img { width: 100%; display : block; pointer-events: none; }
+}
+
+/* image layers */
+.cd-image-label {
+  position                : absolute;
+  bottom                  : 0;
+  right                   : 0;
+  color                   : transparent;
+  padding                 : 1em;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  .transition(all @default-transition);
+
+  &.is-hidden { bottom: -100%; }
+
+  &.background--light { color: @text-color; }
+  &.background--dark { color: #fff; }
+}
+
+/* images */
+.cd-resize-img {
+  position     : absolute;
+  top          : 0;
+  left         : 0;
+  width        : 50%;
+  height       : 100%;
+  overflow     : hidden;
+  border-right : 4px solid #fff;
+
+  .translate3d(0, 0, 0);
+  -webkit-backface-visibility : hidden;
+  backface-visibility         : hidden;
+
+  img {
+    position  : absolute;
+    left      : 0;
+    top       : 0;
+    display   : block;
+    height    : 100%;
+    width     : auto;
+    max-width : none;
+  }
+
+  .cd-image-label {
+    right : auto;
+    left  : 0;
+  }
+}
+
+/* draggable block */
+.cd-handle {
+  display     : block;
+  position    : absolute;
+  padding     : 7px 4px;
+
+  // center the element
+  left        : 50%;
+  top         : 50%;
+  margin-top  : -15px;
+  margin-left : -8px;
+
+  background : @brand-primary;
+  cursor     : move;
+
+  .clearfix;
+
+  > i {
+    background : #fff;
+    display    : block;
+    float      : left;
+    width      : 1px;
+    height     : 16px;
+    margin-right: 1px;
+
+    &:last-child { margin-right: 0; }
+    .opacity(0.7);
+  }
+
+  &.cd-draggable { background-color : darken(@brand-primary, 10%); }
+}

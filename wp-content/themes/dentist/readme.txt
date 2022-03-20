@@ -1,0 +1,3 @@
+Dentist is a responsive WordPress Theme special crafted for dentist, dentist office. We have included all sections that a stomatology website need. Gallery (before&after), testimonials, doctors, office description, request form, contacts, services. All this stuff is fully editable, you can change colors, fonts, order, images, texts, and no coding skills is necessary. Dentist is built on Unyson Framework with drag & drop page builder.
+
+Online documentation: http://docs.wphunters.com/dentist-documentation

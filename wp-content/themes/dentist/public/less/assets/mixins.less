@@ -1,0 +1,54 @@
+.reset-box-model(@ul-reset: false) {
+  margin  : 0;
+  padding : 0;
+  border  : 0;
+
+  & when (@ul-reset = true) {
+    list-style: none;
+  }
+}
+
+.hide-text() {
+  text-indent : 100%;
+  white-space : nowrap;
+  overflow    : hidden;
+}
+
+.base-font-family() {
+  font-family: @font-family-base;
+  font-weight: 400;
+}
+
+.transform(@transform) {
+  -webkit-transform : @transform;
+  -moz-transform    : @transform;
+  -ms-transform     : @transform;
+  -o-transform      : @transform;
+  transform         : @transform;
+}
+
+.webkit-scrollbar {
+  &::-webkit-scrollbar {
+    width : 9px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-border-radius : 5px;
+    border-radius         : 5px;
+    background            : rgba(0, 0, 0, 0.1);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius : 5px;
+    border-radius         : 5px;
+    background            : rgba(0, 0, 0, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background : rgba(0, 0, 0, 0.4);
+  }
+
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background : rgba(0, 0, 0, 0.05);
+  }
+}

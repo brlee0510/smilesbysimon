@@ -1,0 +1,11 @@
+<wpml-config>
+    <admin-texts>
+        <key name="fw_theme_settings_options:dentist">
+            <key name="blog_title" />
+            <key name="request_hash" />
+            <key name="site_phone" />
+            <key name="site_address" />
+            <key name="footer_text" />
+        </key>
+    </admin-texts>
+</wpml-config>

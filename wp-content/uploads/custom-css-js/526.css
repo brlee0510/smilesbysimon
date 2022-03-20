@@ -1,0 +1,27 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+#head-info .logo.image img {
+    height: 100px;
+}
+
+#head-info {
+    padding: 15px 0;
+}
+
+.testimonials-block .item .post-body{
+  min-height: 292px;
+}
+
+div.wpcf7-response-output {border:none; background:none;}</style>
+<!-- end Simple Custom CSS and JS -->
